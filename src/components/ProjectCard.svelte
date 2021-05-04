@@ -1,6 +1,8 @@
 <script lang="ts">
   import { Button, Tag } from "carbon-components-svelte";
   import type { Project } from "../Data/models";
+  import LogoGithub24 from "carbon-icons-svelte/lib/LogoGithub24";
+  import Launch24 from "carbon-icons-svelte/lib/Launch24";
 
   export let project: Project = null;
   let vw;
@@ -14,7 +16,7 @@
       <h3>{project.name}</h3>
       <p>{project.tagline}</p>
       {#each project.tags as tag}
-        <Tag type="cool-gray">{tag}</Tag>
+        <Tag type="cyan">{tag}</Tag>
       {/each}
     </div>
     <!-- MOBILE -->
@@ -24,6 +26,7 @@
         width={project.thumbnailSizes.mobileWidth}
         height={project.thumbnailSizes.mobileHeight}
         alt={`Screenshot of ${project.name}`}
+        loading="lazy"
       />
     {/if}
     <div class="content">
@@ -32,8 +35,8 @@
       </p>
     </div>
     <div class="action-row">
-      <Button>Live Site</Button>
-      <Button>GitHub Repo</Button>
+      <Button icon={Launch24}>Live Site</Button>
+      <Button icon={LogoGithub24}>GitHub Repo</Button>
     </div>
   </div>
   <!-- DESKTOP -->
@@ -43,6 +46,7 @@
       width={project.thumbnailSizes.desktopWidth}
       height={project.thumbnailSizes.desktopHeight}
       alt={`Screenshot of ${project.name}`}
+      loading="lazy"
     />
   {/if}
 </article>
@@ -60,6 +64,11 @@
   .content-wrapper {
     max-width: 512px;
     margin: 0;
+  }
+
+  .header {
+    padding: 0 0 0 10px;
+    border-left: 5px solid var(--accent-2);
   }
 
   .header p {

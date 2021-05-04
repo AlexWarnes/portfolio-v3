@@ -65,6 +65,7 @@ a {
 
 .bx--header {
   background-color: var(--background-900) !important;
+  border-bottom: none !important;
 }
 
 /* PRIMARY BUTTONS */
