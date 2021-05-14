@@ -44,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #353948;
+  background: var(--accent-1);
   opacity: 0.5;
 }
 
@@ -98,11 +98,13 @@ a {
 
 /* TERTIARY BUTTONS */
 .bx--btn--tertiary {
-  border-color: var(--background-900) !important;
-  color: var(--background-900) !important;
+  border-color: var(--white-1) !important;
+  color: var(--white-1) !important;
+  /* border-color: var(--background-900) !important;
+  color: var(--background-900) !important; */
 }
 .bx--btn--tertiary:hover {
-  border-color: var(--accent-2) !important;
+  border-color: var(--accent-1) !important;
   color: var(--white-1) !important;
   background-color: var(--background-900) !important;
 }

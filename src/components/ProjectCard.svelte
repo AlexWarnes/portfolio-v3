@@ -16,7 +16,7 @@
       <h3>{project.name}</h3>
       <p>{project.tagline}</p>
       {#each project.tags as tag}
-        <Tag type="cyan">{tag}</Tag>
+        <Tag type="cool-gray">{tag}</Tag>
       {/each}
     </div>
     <!-- MOBILE -->
@@ -68,7 +68,7 @@
 
   .header {
     padding: 0 0 0 10px;
-    border-left: 5px solid var(--accent-2);
+    border-left: 5px solid var(--accent-1);
   }
 
   .header p {
@@ -79,7 +79,7 @@
     display: block;
     margin: 24px auto 12px;
     box-shadow: 0 10px 40px -5px #00000050;
-    animation: float 2.5s ease-in-out 0s 1 forwards;
+    /* animation: float 2.5s ease-in-out 0s 1 forwards; */
   }
 
   .content {

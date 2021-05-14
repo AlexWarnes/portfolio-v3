@@ -5,55 +5,51 @@
   import Email24 from "carbon-icons-svelte/lib/Email24";
   import LogoLinkedin24 from "carbon-icons-svelte/lib/LogoLinkedin24";
   import { Button } from "carbon-components-svelte";
+  import { fade } from "svelte/transition";
   export let rowStyles: string = "";
+  const contactItems = [
+    {
+      description: "Email",
+      icon: Email24,
+      href: "mailto:alex.s.warnes@gmail.com",
+    },
+    {
+      description: "GitHub",
+      icon: LogoGithub24,
+      href: "https://github.com/AlexWarnes/",
+    },
+    {
+      description: "Instagram",
+      icon: LogoInstagram24,
+      href: "https://www.instagram.com/alexwarnesphotos/",
+    },
+    {
+      description: "Twitter",
+      icon: LogoTwitter24,
+      href: "https://twitter.com/a_warnes",
+    },
+    {
+      description: "LinkedIn",
+      icon: LogoLinkedin24,
+      href: "https://www.linkedin.com/in/alexwarnes/",
+    },
+  ];
 </script>
 
 <div class="social-row" style={rowStyles}>
-  <Button
-    kind="tertiary"
-    href="mailto:alex.s.warnes@gmail.com"
-    tooltipPosition="bottom"
-    tooltipAlignment="center"
-    iconDescription="Email"
-    disabled={false}
-    icon={Email24}
-  />
-  <Button
-    kind="tertiary"
-    href="https://github.com/AlexWarnes/"
-    tooltipPosition="bottom"
-    tooltipAlignment="center"
-    iconDescription="GitHub"
-    disabled={false}
-    icon={LogoGithub24}
-  />
-  <Button
-    kind="tertiary"
-    href="https://www.instagram.com/alexwarnesphotos/"
-    tooltipPosition="bottom"
-    tooltipAlignment="center"
-    iconDescription="Instagram"
-    disabled={false}
-    icon={LogoInstagram24}
-  />
-  <Button
-    kind="tertiary"
-    href="https://twitter.com/a_warnes"
-    tooltipPosition="bottom"
-    tooltipAlignment="center"
-    iconDescription="Twitter"
-    disabled={false}
-    icon={LogoTwitter24}
-  />
-  <Button
-    kind="tertiary"
-    href="https://www.linkedin.com/in/alexwarnes/"
-    tooltipPosition="bottom"
-    tooltipAlignment="center"
-    iconDescription="Twitter"
-    disabled={false}
-    icon={LogoLinkedin24}
-  />
+  {#each contactItems as item, idx}
+    <span in:fade={{ duration: 1000, delay: 200 + idx * 100 }}>
+      <Button
+        kind="tertiary"
+        href={item.href}
+        tooltipPosition="bottom"
+        tooltipAlignment="center"
+        iconDescription={item.description}
+        disabled={false}
+        icon={item.icon}
+      />
+    </span>
+  {/each}
 </div>
 
 <style>

@@ -28,7 +28,7 @@
     {#each tools as tool, idx}
       <span 
         in:fade={{ duration: 1000, delay: 400 + idx * 100   }}>
-        <Tag type="cyan">{tool}</Tag>
+        <Tag type="cool-gray">{tool}</Tag>
       </span>
     {/each}
   </div>
@@ -39,7 +39,6 @@
 
 <style>
   .webdev-header {
-    margin: 48px 0 0;
     background-color: none;
     background-color: #272727;
     /* Cropped photo ideal for mobile */

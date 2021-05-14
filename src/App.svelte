@@ -4,10 +4,8 @@
 
   import { Header } from "carbon-components-svelte";
 
-  let vw;
 </script>
 
-<svelte:window bind:innerWidth={vw} />
 
 <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
   <div class="flex-spacer" />
@@ -30,6 +28,7 @@
   /* // @import "carbon-components-svelte/css/white"; */
 
   main {
+    padding-top: 48px;
     height: 100%;
     scroll-behavior: smooth;
     overflow: auto;
