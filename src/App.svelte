@@ -2,24 +2,68 @@
   import Router from "svelte-spa-router";
   import routes from "./routes";
 
-  import { Header } from "carbon-components-svelte";
+  import {
+    Header,
+    Button,
+    Icon,
+    HeaderUtilities,
+    HeaderAction,
+    HeaderPanelLinks,
+    HeaderPanelLink,
+  } from "carbon-components-svelte";
+  import Home32 from "carbon-icons-svelte/lib/Home32";
+  import LocationPerson32 from "carbon-icons-svelte/lib/LocationPerson32";
+  import Code32 from "carbon-icons-svelte/lib/Code32";
 
+  let isOpen = false;
+  let vw;
+  let hash;
+  const hashChange = () => {
+    hash = window.location.hash;
+  }
 </script>
 
+<svelte:window bind:innerWidth={vw} on:hashchange={hashChange}/>
 
-<Header company="Alex Warnes" platformName="Portfolio" href="/#/">
-  <div class="flex-spacer" />
-  <!-- TODO -->
-  <!-- <span class="nav-btn-wrapper">
-    <Button href="/#/development" kind="ghost">DEVELOPMENT</Button>
-  </span>
-  <span class="nav-btn-wrapper">
-    <Button href="/#/photography" kind="ghost">PHOTOGRAPHY</Button>
-  </span>
-  <span class="nav-btn-wrapper">
-    <Button href="/#/about" kind="ghost">ABOUT</Button>
-  </span> -->
-</Header>
+<!-- DESKTOP -->
+{#if vw > 875}
+  <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
+    <div class="flex-spacer" />
+    {#if hash !== "#/"}
+      <span class="nav-btn-wrapper">
+        <Button href="/#/development" kind="ghost">PROJECTS</Button>
+      </span>
+      <span class="nav-btn-wrapper">
+        <Button href="/#/about" kind="ghost">ABOUT</Button>
+      </span>
+    {/if}
+  </Header>
+{:else}
+  <!-- MOBILE -->
+  <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
+    <div class="flex-spacer" />
+    <HeaderUtilities>
+      <HeaderAction bind:isOpen>
+        <HeaderPanelLinks>
+          <span class="nav-menu-wrapper">
+            <HeaderPanelLink href="/#/">
+              <Icon render={Home32} />
+              HOME</HeaderPanelLink
+            >
+            <HeaderPanelLink href="/#/development">
+              <Icon render={Code32} />
+              PROJECTS</HeaderPanelLink
+            >
+            <HeaderPanelLink href="/#/about">
+              <Icon render={LocationPerson32} />
+              ABOUT</HeaderPanelLink
+            >
+          </span></HeaderPanelLinks
+        >
+      </HeaderAction>
+    </HeaderUtilities>
+  </Header>
+{/if}
 <main>
   <Router {routes} />
 </main>
@@ -34,7 +78,7 @@
     overflow: auto;
   }
 
-  .nav-btn-wrapper :global(a) {
+  /* .nav-btn-wrapper :global(a) {
     color: var(--white-1);
     text-decoration: none;
     font-weight: 600;
@@ -46,5 +90,23 @@
     color: var(--white-1);
     background-color: var(--background-700);
     border-bottom: 2px solid var(--accent-2);
+  } */
+
+  .flex-spacer {
+    flex-grow: 1;
+  }
+  .nav-btn-wrapper :global(a) {
+    color: var(--white-1);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 12px;
+  }
+  .nav-menu-wrapper :global(a) {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+  }
+  .nav-menu-wrapper :global(svg) {
+    margin: 0 10px 0 0;
   }
 </style>
