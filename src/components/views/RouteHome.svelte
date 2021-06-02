@@ -50,7 +50,7 @@ bottom: 5px;"
 
   .button-wrapper {
     display: block;
-    margin: 48px 0;
+    margin: 18px 0;
   }
 
 </style>

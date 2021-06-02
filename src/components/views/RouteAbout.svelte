@@ -13,13 +13,7 @@
   <p>
     After several years as an intelligence analyst, and feeling a bit like my
     career trajectory was not aligned with my interests and goals, I decided to
-    start building a new set of skills to make a change. Unsure where to start,
-    I tried everything I was interested in. I studied computer networking,
-    restored old furniture, built a quadcopter (only started one electrical
-    fire!), took a couple Udemy courses to build games in C# and C++, developed
-    a passion for astrophotography, and joined the ranks of thousands of
-    Coursera dropouts. I learned a lot, failed frequently, and succeeded in some
-    ways I didn't expect.
+    start building a new set of skills to make a change.
   </p>
   <p>
     Unsure where to start, I tried everything I was interested in. I studied
@@ -67,15 +61,24 @@
     <li>
       <h4>Creativity</h4>
       <p>
-        Photography and post-processing techniques taught me a lot
-        about composition, color, and creative design generally. Much of this
-        applies to web design as well (who knew there were so many fonts?). I'm
-        always looking forward to the process of turning wireframes into fully
-        designed pages, or finding the best combination of offset, blur, and
-        opacity for the perfect button:hover shadow transitions.
+        Photography and post-processing techniques taught me a lot about
+        composition, color, and creative design generally. Much of this applies
+        to web design as well (who knew there were so many fonts?). I'm always
+        looking forward to the process of turning wireframes into fully designed
+        pages, or finding the best combination of offset, blur, and opacity for
+        the perfect button:hover shadow transitions.
       </p>
     </li>
   </ul>
+  <h3>New Career</h3>
+  <p>
+    In early 2019, Booz Allen hired me into a developer role and I said farewell
+    to my career as an analyst. Since then I've had the opportunity to work with
+    and learn from some amazing people while building and maintaining
+    enterprise-scale Angular and React applications (and grew an obsession with
+    composing RxJS streams).
+  </p>
+  <p>Now I'm always excited to see what I get to learn and work on next.</p>
 </section>
 
 <style>

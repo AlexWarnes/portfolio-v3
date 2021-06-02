@@ -14,22 +14,34 @@
   import Home32 from "carbon-icons-svelte/lib/Home32";
   import LocationPerson32 from "carbon-icons-svelte/lib/LocationPerson32";
   import Code32 from "carbon-icons-svelte/lib/Code32";
+  import { onMount } from "svelte";
 
   let isOpen = false;
   let vw;
-  let hash;
+  let showNavButtons = false;
+  const updateHash = () => {
+    if (window.location.hash === "#/" || window.location.hash === "") {
+      showNavButtons = false;
+    } else {
+      showNavButtons = true;
+    }
+  };
   const hashChange = () => {
-    hash = window.location.hash;
-  }
+    updateHash();
+  };
+
+  onMount(() => {
+    updateHash();
+  });
 </script>
 
-<svelte:window bind:innerWidth={vw} on:hashchange={hashChange}/>
+<svelte:window bind:innerWidth={vw} on:hashchange={hashChange} />
 
 <!-- DESKTOP -->
 {#if vw > 875}
   <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
     <div class="flex-spacer" />
-    {#if hash !== "#/"}
+    {#if showNavButtons}
       <span class="nav-btn-wrapper">
         <Button href="/#/development" kind="ghost">PROJECTS</Button>
       </span>

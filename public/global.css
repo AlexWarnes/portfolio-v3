@@ -71,17 +71,21 @@ a {
 /* PRIMARY BUTTONS */
 .bx--btn--primary {
   /* background-color: var(--accent-1) !important; */
-  background-color: var(--background-700) !important;
-  font-weight: 600 !important;
-  box-shadow: 2px 2px 8px #00000018 !important;
-  border: 2px solid transparent !important;
-  transition: all 0.2s ease;
-}
-
-.bx--btn--primary:hover {
   background-color: var(--background-900) !important;
   font-weight: 600 !important;
-  border: 2px solid var(--accent-1) !important;
+  box-shadow: -4px 4px 0 var(--accent-2) !important;
+  /* box-shadow: 2px 2px 8px #00000018 !important;
+  border: 2px solid transparent !important; */
+  transition: box-shadow 0.2s ease !important;
+}
+
+
+
+.bx--btn--primary:hover {
+  /* background-color: var(--background-900) !important; */
+  font-weight: 600 !important;
+  /* border: 2px solid var(--accent-1) !important; */
+  box-shadow: -8px 8px 0 var(--accent-1) !important;
 }
 
 .bx--btn--primary svg {
@@ -107,6 +111,10 @@ a {
   border-color: var(--accent-1) !important;
   color: var(--white-1) !important;
   background-color: var(--background-900) !important;
+}
+
+.bx--btn--ghost:hover {
+  background-color: #00000038 !important;
 }
 
 @keyframes float {
