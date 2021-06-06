@@ -73,10 +73,10 @@ a {
   /* background-color: var(--accent-1) !important; */
   background-color: var(--background-900) !important;
   font-weight: 600 !important;
-  box-shadow: -4px 4px 0 var(--accent-2) !important;
-  /* box-shadow: 2px 2px 8px #00000018 !important;
-  border: 2px solid transparent !important; */
-  transition: box-shadow 0.2s ease !important;
+  /* box-shadow: -4px 4px 0 var(--accent-2) !important; */
+  box-shadow: 2px 2px 8px #00000018 !important;
+  border: 2px solid transparent !important;
+  transition: all 0.2s ease !important;
 }
 
 
@@ -84,8 +84,8 @@ a {
 .bx--btn--primary:hover {
   /* background-color: var(--background-900) !important; */
   font-weight: 600 !important;
-  /* border: 2px solid var(--accent-1) !important; */
-  box-shadow: -8px 8px 0 var(--accent-1) !important;
+  border: 2px solid var(--accent-1) !important;
+  /* box-shadow: -8px 8px 0 var(--accent-1) !important; */
 }
 
 .bx--btn--primary svg {
@@ -115,6 +115,22 @@ a {
 
 .bx--btn--ghost:hover {
   background-color: #00000038 !important;
+}
+
+.bx--header-panel {
+  background-color: var(--background-700) !important;
+}
+
+.bx--switcher__item-link {
+  color: #ffffff !important;
+}
+
+.nav-menu-wrapper a {
+  margin: 24px 0 !important;
+}
+
+.nav-menu-wrapper svg {
+  transform: scale(.75);
 }
 
 @keyframes float {
