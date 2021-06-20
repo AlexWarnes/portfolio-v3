@@ -1,15 +1,17 @@
 <script>
+  import { Link, Icon } from "carbon-components-svelte";
   import PageHeader from "../PageHeader.svelte";
+  import Launch16 from "carbon-icons-svelte/lib/Launch16";
 </script>
 
 <PageHeader
   title="Hi, I'm Alex"
-  subtitle="Web developer since 2018, former intelligence analyst, amateur photographer, nonproliferation policy nerd, and serial hobbyist. I’m always learning and love telling dad jokes!"
+  subtitle="Web developer since 2018, former intelligence analyst, amateur photographer, nonproliferation policy nerd, and serial hobbyist. I’m always learning and love telling dad jokes."
   backgroundImgURL="https://github.com/AlexWarnes/Portfolio/blob/master/assets/olympicTrail.jpg?raw=true"
 />
 
 <section>
-  <h2>Career Transition from Analyst to Developer</h2>
+  <h2>From Intelligence Analyst to Developer</h2>
   <p>
     After several years as an intelligence analyst, and feeling a bit like my
     career trajectory was not aligned with my interests and goals, I decided to
@@ -20,57 +22,17 @@
     computer networking, restored old furniture, built a quadcopter (only
     started one electrical fire!), took a couple Udemy courses to build games in
     C# and C++, developed a passion for astrophotography, and joined the ranks
-    of thousands of Coursera dropouts. I learned a lot, failed frequently, and
-    succeeded in some ways I didn't expect.
+    of thousands of Coursera dropouts. Through this process I learned I wanted to
+    land in a field where I could be creative, where I could build things, and
+    where I could do something technical. I didn't want to incur the financial
+    and time-consuming debt of going back to university.
   </p>
-  <h3>Combined Interests: Design, Build, Be Useful</h3>
   <p>
-    Through this process, and with the support of my wife (who enrolled me in a
-    soldering class - no more electrical fires!) I learned that I wanted to land
-    in a field where I could be creative, where I could build things, and where
-    I could "code" (undefined at the time). I didn't want to incur the financial
-    and time-consuming debt of going back to university, and one day my wife
-    asked "Why don't you do a coding bootcamp?"
+    After a few free HTML, CSS, and JavaScript courses I enrolled in Thinkful's
+    full-stack development program to build some foundational knowledge. For me,
+    web development became an engaging cycle of designing, learning,
+    programming, and creative problem-solving. I was hooked.
   </p>
-  <h3>Web Development is Endless Learning (that’s a good thing)</h3>
-  <p>
-    I immediately took to web development, and after a few free courses I
-    enrolled in Thinkful's Full-Stack Flex program to build some foundational
-    knowledge. Web development, particularly frontend, is an engaging
-    combination of things that motivate me:
-  </p>
-  <ul class="motivation-list">
-    <li>
-      <h4>Learning</h4>
-      <p>
-        No one finishes a bootcamp and comes out an expert, but even experts
-        have more to learn. A lot can be gleaned from how a person learns as
-        opposed to how much they know. And I love that in this field I will
-        always be able to learn something new.
-      </p>
-    </li>
-    <li>
-      <h4>Programming</h4>
-      <p>
-        Logic, problem solving, algorithms, state management, functional,
-        object-oriented, imperative... The technical part of my brain enjoys
-        both the simple and complex aspects of web development. It's what I used
-        to think of as just "coding." You know, nerd stuff.
-      </p>
-    </li>
-    <li>
-      <h4>Creativity</h4>
-      <p>
-        Photography and post-processing techniques taught me a lot about
-        composition, color, and creative design generally. Much of this applies
-        to web design as well (who knew there were so many fonts?). I'm always
-        looking forward to the process of turning wireframes into fully designed
-        pages, or finding the best combination of offset, blur, and opacity for
-        the perfect button:hover shadow transitions.
-      </p>
-    </li>
-  </ul>
-  <h3>New Career</h3>
   <p>
     In early 2019, Booz Allen hired me into a developer role and I said farewell
     to my career as an analyst. Since then I've had the opportunity to work with
@@ -78,7 +40,19 @@
     enterprise-scale Angular and React applications (and grew an obsession with
     composing RxJS streams).
   </p>
-  <p>Now I'm always excited to see what I get to learn and work on next.</p>
+  <p>
+    These days, when I’m not trying to make my daughter laugh (toddlers are the
+    best audience), I’m looking for new things to learn and build. For examples
+    of my development work and photography, check out my <Link
+      href="/#/development">portfolio</Link
+    > and <Link
+      href="https://www.instagram.com/alexwarnesphotos/"
+      target="_blank">Instagram<Icon render={Launch16} /></Link
+    >, or connect with me on <Link
+      href="https://www.linkedin.com/in/alexwarnes/"
+      target="_blank">LinkedIn<Icon render={Launch16} /></Link
+    >.
+  </p>
 </section>
 
 <style>
@@ -89,20 +63,8 @@
     margin: 0 auto;
   }
 
-  .motivation-list {
-    padding: 0 0 0 16px;
-  }
-
   h2 {
     margin: 48px 0 36px;
-  }
-
-  h3 {
-    margin: 24px 0 16px;
-  }
-
-  h4 {
-    margin: 16px 0 8px;
   }
 
   p {
