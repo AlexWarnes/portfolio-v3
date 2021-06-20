@@ -1,23 +1,8 @@
-# rollup-typescript
+Portfolio of web development projects, some background about me, and contact information across social media.
 
-> Example Rollup/TypeScript set-up scaffolded from the official [Svelte template](https://github.com/sveltejs/template).
+[https://alexwarnes.netlify.app](https://alexwarnes.netlify.app)
 
-## Getting started
-
-Scaffold a new project using [degit](https://github.com/Rich-Harris/degit):
-
-```sh
-npx degit ibm/carbon-components-svelte#rollup-typescript svelte-app
-cd svelte-app
-yarn install
-```
-
-## Available scripts
-
-### `yarn dev`
-
-Starts the app in development mode.
-
-### `yarn build`
-
-Builds the app for production.
+## Technical Details
+*  Svelte
+*  Carbon Components and Carbon Icons
+*  Netlify
