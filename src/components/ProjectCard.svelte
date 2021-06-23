@@ -35,8 +35,8 @@
       </p>
     </div>
     <div class="action-row">
-      <Button icon={Launch24}>Live Site</Button>
-      <Button icon={LogoGithub24}>GitHub Repo</Button>
+      <Button href={project.prodURL} target="_blank" icon={Launch24}>Live Site</Button>
+      <Button href={project.repoURL} target="_blank" icon={LogoGithub24}>GitHub Repo</Button>
     </div>
   </div>
   <!-- DESKTOP -->
