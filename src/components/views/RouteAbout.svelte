@@ -2,13 +2,18 @@
   import { Link, Icon } from "carbon-components-svelte";
   import PageHeader from "../PageHeader.svelte";
   import Launch16 from "carbon-icons-svelte/lib/Launch16";
+  import SocialMedia from "../SocialMedia.svelte";
 </script>
 
 <PageHeader
   title="Hi, I'm Alex"
   subtitle="Web developer since 2018, former intelligence analyst, amateur photographer, nonproliferation policy nerd, and serial hobbyist. I’m always learning and love telling dad jokes."
   backgroundImgURL="https://github.com/AlexWarnes/Portfolio/blob/master/assets/olympicTrail.jpg?raw=true"
-/>
+>
+  <div class="social-media-wrapper">
+    <SocialMedia />
+  </div>
+</PageHeader>
 
 <section>
   <h2>From Intelligence Analyst to Developer</h2>
@@ -22,10 +27,10 @@
     computer networking, restored old furniture, built a quadcopter (only
     started one electrical fire!), took a couple Udemy courses to build games in
     C# and C++, developed a passion for astrophotography, and joined the ranks
-    of thousands of Coursera dropouts. Through this process I learned I wanted to
-    land in a field where I could be creative, where I could build things, and
-    where I could do something technical. I didn't want to incur the financial
-    and time-consuming debt of going back to university.
+    of thousands of Coursera dropouts. Through this process I learned I wanted
+    to land in a field where I could be creative, where I could build things,
+    and where I could do something technical. I didn't want to incur the
+    financial and time-consuming debt of going back to university.
   </p>
   <p>
     After a few free HTML, CSS, and JavaScript courses I enrolled in Thinkful's
@@ -69,5 +74,9 @@
 
   p {
     margin: 0 0 1em;
+  }
+
+  .social-media-wrapper {
+    margin-top: 60px;
   }
 </style>

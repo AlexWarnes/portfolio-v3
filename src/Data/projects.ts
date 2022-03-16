@@ -20,6 +20,41 @@ export const projects: Project[] = [
     },
   } as Project,
   {
+    id: "1e41fddf-664a-42d6-9f62-0c16b70ff0a3",
+    name: "SC3 Lab",
+    tagline:
+      "Experiment, learn, and generate code for 3D scenes in the browser with three.js and svelte-cubed",
+    description:
+      "An visual editor for building 3D scenes and generating svelte-cubed code. SC3 Lab can help you quickly setup a scene and share the code via Svelte REPL, experiment with different light and material combinations, or test glTF model animations.",
+    repoURL: "https://github.com/AlexWarnes/sc3-lab",
+    prodURL: "https://sc3-lab.netlify.app/",
+    tags: ["Svelte", "TypeScript", "three.js", "svelte-cubed", "Netlify"],
+    thumbnailURL: "/assets/sc3-lab.png",
+    thumbnailSizes: {
+      mobileWidth: 320,
+      mobileHeight: 160,
+      desktopWidth: 510,
+      desktopHeight: 256,
+    },
+  } as Project,
+  {
+    id: "64a6c586-9abe-4fea-960b-ae61d1bfcdfd",
+    name: "svelte-fuse-rx",
+    tagline: "Fusing Svelte and RxJS with simple actions and pipeable stores",
+    description:
+      "Combining two of my favorite tools (and learning how to publish an NPM package), svelte-fuse-rx has two primary utilities: an enhanced writable store that can use RxJS operators via pipe, and simple svelte actions for common RxJS use cases like debouncing an input.",
+    repoURL: "https://github.com/AlexWarnes/svelte-fuse-rx",
+    prodURL: "https://svelte-fuse-rx.netlify.app/",
+    tags: ["Svelte", "SvelteKit", "TypeScript", "RxJS", "Netlify"],
+    thumbnailURL: "/assets/svelte-fuse-rx.png",
+    thumbnailSizes: {
+      mobileWidth: 320,
+      mobileHeight: 160,
+      desktopWidth: 510,
+      desktopHeight: 256,
+    },
+  } as Project,
+  {
     id: "bc33c4f8-dca7-4f70-86eb-113999dd9fb9",
     name: "Falah",
     tagline: "A simple Islamic prayer times app.",
@@ -74,8 +109,8 @@ export const projects: Project[] = [
 
 // [
 //   "",
-//   "1e41fddf-664a-42d6-9f62-0c16b70ff0a3",
-//   "64a6c586-9abe-4fea-960b-ae61d1bfcdfd",
+//   "",
+//   "",
 //   "929abe4a-458e-4853-ac8b-c5e98c6341bd",
 //   "e1d6f7fe-71b8-455c-a58c-5845376a5cf5",
 //   "67280d10-3c47-4d22-a44e-c897d059a593",
