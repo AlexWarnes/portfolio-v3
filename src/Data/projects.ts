@@ -40,7 +40,8 @@ export const projects: Project[] = [
   {
     id: "64a6c586-9abe-4fea-960b-ae61d1bfcdfd",
     name: "svelte-fuse-rx",
-    tagline: "Fusing Svelte and RxJS with simple actions and pipeable stores",
+    tagline:
+      "NPM package fusing Svelte and RxJS with simple actions and pipeable stores",
     description:
       "Combining two of my favorite tools (and learning how to publish an NPM package), svelte-fuse-rx has two primary utilities: an enhanced writable store that can use RxJS operators via pipe, and simple svelte actions for common RxJS use cases like debouncing an input.",
     repoURL: "https://github.com/AlexWarnes/svelte-fuse-rx",
@@ -52,6 +53,24 @@ export const projects: Project[] = [
       mobileHeight: 160,
       desktopWidth: 510,
       desktopHeight: 256,
+    },
+  } as Project,
+  {
+    id: "929abe4a-458e-4853-ac8b-c5e98c6341bd",
+    name: "Enrichment Calculator",
+    tagline: "A modern gas centrifuge enrichment calculator.",
+    description:
+      "Instantly see how gas centrifuge enrichment variables change under different scenarios by isolating SWU, Feed and SWU, Product and SWU, or Feed and Product. Svelte's reactive statements make complex formulas easy to bind together with HTML inputs.",
+    repoURL: "https://github.com/AlexWarnes/enrichment-calc",
+    prodURL: "https://enrichment-calc.netlify.app/",
+    tags: ["Svelte", "Netlify"],
+    thumbnailURL: "/assets/enrichment.png",
+    thumbnailSizes: {
+      mobileWidth: 298,
+      mobileHeight: 365,
+      desktopWidth: 331,
+      desktopHeight: 406,
+      // 662 x 812, 331 x 406
     },
   } as Project,
   {
@@ -107,11 +126,8 @@ export const projects: Project[] = [
   } as Project,
 ];
 
+// Extra uuids
 // [
-//   "",
-//   "",
-//   "",
-//   "929abe4a-458e-4853-ac8b-c5e98c6341bd",
 //   "e1d6f7fe-71b8-455c-a58c-5845376a5cf5",
 //   "67280d10-3c47-4d22-a44e-c897d059a593",
 //   "205baaed-2de3-4968-bece-e1708ebf7542"
