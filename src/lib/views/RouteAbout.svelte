@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import { Link, Icon } from "carbon-components-svelte";
   import PageHeader from "../PageHeader.svelte";
   import Launch16 from "carbon-icons-svelte/lib/Launch16";
@@ -79,4 +79,4 @@
   .social-media-wrapper {
     margin-top: 60px;
   }
-</style>
+</style> -->

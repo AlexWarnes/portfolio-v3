@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import { projects } from "../../Data/projects";
   import ProjectCard from "../ProjectCard.svelte";
   import PageHeader from "../PageHeader.svelte";
@@ -99,4 +99,4 @@ small ways."
       background-position: bottom;
     }
   }
-</style>
+</style> -->

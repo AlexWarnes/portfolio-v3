@@ -1,36 +1,35 @@
 <script lang="ts">
-  import LogoGithub24 from "carbon-icons-svelte/lib/LogoGithub24";
-  import LogoTwitter24 from "carbon-icons-svelte/lib/LogoTwitter24";
-  import LogoInstagram24 from "carbon-icons-svelte/lib/LogoInstagram24";
-  import Email24 from "carbon-icons-svelte/lib/Email24";
-  import LogoLinkedin24 from "carbon-icons-svelte/lib/LogoLinkedin24";
-  import { Button } from "carbon-components-svelte";
+  import { IconMail } from "@tabler/icons-svelte";
+  import { IconBrandGithub } from "@tabler/icons-svelte";
+  import { IconBrandInstagram } from "@tabler/icons-svelte";
+  import { IconBrandTwitter } from "@tabler/icons-svelte";
+  import { IconBrandLinkedin } from "@tabler/icons-svelte";
   import { fade } from "svelte/transition";
   export let rowStyles: string = "";
   const contactItems = [
     {
       description: "Email",
-      icon: Email24,
+      icon: IconMail,
       href: "mailto:alex.s.warnes@gmail.com",
     },
     {
       description: "GitHub",
-      icon: LogoGithub24,
+      icon: IconBrandGithub,
       href: "https://github.com/AlexWarnes/",
     },
     {
       description: "Instagram",
-      icon: LogoInstagram24,
+      icon: IconBrandInstagram,
       href: "https://www.instagram.com/alexwarnesphotos/",
     },
     {
       description: "Twitter",
-      icon: LogoTwitter24,
+      icon: IconBrandTwitter,
       href: "https://twitter.com/a_warnes",
     },
     {
       description: "LinkedIn",
-      icon: LogoLinkedin24,
+      icon: IconBrandLinkedin,
       href: "https://www.linkedin.com/in/alexwarnes/",
     },
   ];
@@ -39,25 +38,17 @@
 <div class="social-row" style={rowStyles}>
   {#each contactItems as item, idx}
     <span in:fade={{ duration: 1000, delay: 200 + idx * 100 }}>
-      <Button
-        kind="tertiary"
-        href={item.href}
-        tooltipPosition="bottom"
-        tooltipAlignment="center"
-        iconDescription={item.description}
-        disabled={false}
-        icon={item.icon}
-      />
+      <a class="btn icon-btn tertiary" title={item.description} href={item.href}>
+        <svelte:component this={item.icon} stroke={1.5} />
+      </a>
+      <!-- <button class="icon-btn tertiary" title={item.description}>
+        <svelte:component this={item.icon} stroke={1.5} />
+      </button> -->
     </span>
   {/each}
 </div>
 
 <style>
-  .social-row
-    :global(.bx--btn.bx--btn--icon-only.bx--tooltip__trigger[disabled]:hover) {
-    cursor: pointer;
-  }
-
   .social-row {
     display: flex;
     justify-content: space-between;

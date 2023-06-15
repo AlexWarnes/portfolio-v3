@@ -7,6 +7,7 @@ export interface Project {
   prodURL: string;
   tags: string[];
   thumbnailURL: string;
+  package?: boolean;
   thumbnailSizes: {
     mobileWidth: number;
     mobileHeight: number;

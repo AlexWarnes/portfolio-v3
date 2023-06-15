@@ -20,28 +20,88 @@ export const projects: Project[] = [
     },
   } as Project,
   {
-    id: "1e41fddf-664a-42d6-9f62-0c16b70ff0a3",
-    name: "SC3 Lab",
+    id: "d78b896d-ee79-4c64-83b2-053c857a644f",
+    name: "Spatula",
     tagline:
-      "Experiment, learn, and generate code for 3D scenes in the browser with three.js and svelte-cubed",
+      "Create beautiful shader materials in the browser and generate your JavaScript. Powered by lamina.",
     description:
-      "An visual editor for building 3D scenes and generating svelte-cubed code. SC3 Lab can help you quickly setup a scene and share the code via Svelte REPL, experiment with different light and material combinations, or test glTF model animations.",
-    repoURL: "https://github.com/AlexWarnes/sc3-lab",
-    prodURL: "https://sc3-lab.netlify.app/",
-    tags: ["Svelte", "TypeScript", "three.js", "svelte-cubed", "Netlify"],
-    thumbnailURL: "/assets/sc3-lab.png",
+      "A side project I made to learn more about shaders using lamina. Spatula is a tool for building shader materials without the need to stand up a new project. Inspired by the official lamina debugger, it allows for layer editing and generates the JavaScript for your material. You can use that code as a material in any project that uses lamina and threejs.",
+    repoURL: "https://github.com/AlexWarnes/lamina-spatula",
+    prodURL: "https://lamina-spatula.vercel.app/",
+    tags: ["SvelteKit", "TypeScript", "Three.js", "Threlte", "RxJS", "Vercel"],
+    thumbnailURL: "/assets/spatula.jpg",
     thumbnailSizes: {
+      // 1200 x 720
       mobileWidth: 320,
-      mobileHeight: 160,
-      desktopWidth: 510,
-      desktopHeight: 256,
+      mobileHeight: 192,
+      desktopWidth: 400,
+      desktopHeight: 240,
+    },
+  } as Project,
+  {
+    id: "d648b64f-7b4e-4984-bbfa-a2151a3c930b",
+    name: "Photon",
+    tagline:
+      "An open source portfolio of 3D scenes, experiments, and prototypes.",
+    description: "",
+    repoURL: "https://github.com/AlexWarnes/photon",
+    prodURL: "https://photon-alexwarnes.vercel.app/",
+    tags: ["SvelteKit", "TypeScript", "Three.js", "Threlte", "Vercel"],
+    thumbnailURL: "/assets/photon.jpg",
+    thumbnailSizes: {
+      // 1200 x 720
+      mobileWidth: 320,
+      mobileHeight: 192,
+      desktopWidth: 400,
+      desktopHeight: 240,
+    },
+  } as Project,
+  {
+    id: "7391f7b0-af40-4cc5-ba6d-e069bcb7aecf",
+    name: "Svelte Sequence",
+    package: true,
+    tagline:
+      "Custom stores to compose tweened motion sequences over multiple steps.",
+    description:
+      "svelte-sequence is an NPM package that provides a custom tweenedSequence store, a custom stopwatch store, and a custom timer store. All of which are utilities that make it easier to coordinate execution of tweened values.",
+    repoURL: "https://github.com/AlexWarnes/svelte-sequence",
+    prodURL: "https://stackblitz.com/edit/example-svelte-sequence",
+    tags: ["Svelte", "TypeScript", "NPM", "semver"],
+    thumbnailURL: "/assets/svelte-sequence-demo.jpg",
+    thumbnailSizes: {
+      // 1200 x 720
+      mobileWidth: 320,
+      mobileHeight: 192,
+      desktopWidth: 400,
+      desktopHeight: 240,
+    },
+  } as Project,
+  {
+    id: "f5603185-ebd9-4320-9ffd-936cd9620711",
+    name: "Svelte KBC",
+    package: true,
+    tagline:
+      "Configure stores for keyboard inputs and events in any Svelte app.",
+    description:
+      "svelte-kbc is an NPM package that provides a config-based keyboard and event stores using Svelte context. I was tired of repeating the same code for setting up keyboard event handlers, so I made svelte-kbc to make things easier!",
+    repoURL: "https://github.com/AlexWarnes/svelte-kbc",
+    prodURL: "https://stackblitz.com/edit/example-svelte-kbc",
+    tags: ["Svelte", "TypeScript", "NPM", "semver"],
+    thumbnailURL: "/assets/svelte-kbc-demo.jpg",
+    thumbnailSizes: {
+      // 1200 x 720
+      mobileWidth: 320,
+      mobileHeight: 192,
+      desktopWidth: 400,
+      desktopHeight: 240,
     },
   } as Project,
   {
     id: "64a6c586-9abe-4fea-960b-ae61d1bfcdfd",
-    name: "svelte-fuse-rx",
+    name: "Svelte Fuse Rx",
+    package: true,
     tagline:
-      "NPM package fusing Svelte and RxJS with simple actions and pipeable stores",
+      "Fusing Svelte and RxJS with simple actions and pipeable stores.",
     description:
       "Combining two of my favorite tools (and learning how to publish an NPM package), svelte-fuse-rx has two primary utilities: an enhanced writable store that can use RxJS operators via pipe, and simple svelte actions for common RxJS use cases like debouncing an input.",
     repoURL: "https://github.com/AlexWarnes/svelte-fuse-rx",
@@ -71,6 +131,24 @@ export const projects: Project[] = [
       desktopWidth: 331,
       desktopHeight: 406,
       // 662 x 812, 331 x 406
+    },
+  } as Project,
+  {
+    id: "1e41fddf-664a-42d6-9f62-0c16b70ff0a3",
+    name: "SC3 Lab",
+    tagline:
+      "Experiment, learn, and generate code for 3D scenes in the browser with Three.js and svelte-cubed.",
+    description:
+      "A visual editor for building 3D scenes and generating svelte-cubed code. SC3 Lab can help you quickly setup a scene and share the code via Svelte REPL, experiment with different light and material combinations, or test glTF model animations.",
+    repoURL: "https://github.com/AlexWarnes/sc3-lab",
+    prodURL: "https://sc3-lab.netlify.app/",
+    tags: ["Svelte", "TypeScript", "Three.js", "svelte-cubed", "Netlify"],
+    thumbnailURL: "/assets/sc3-lab.png",
+    thumbnailSizes: {
+      mobileWidth: 320,
+      mobileHeight: 160,
+      desktopWidth: 510,
+      desktopHeight: 256,
     },
   } as Project,
   {
