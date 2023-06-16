@@ -1,14 +1,12 @@
-<script>
-  import { Link, Icon } from "carbon-components-svelte";
-  import PageHeader from "../PageHeader.svelte";
-  import Launch16 from "carbon-icons-svelte/lib/Launch16";
-  import SocialMedia from "../SocialMedia.svelte";
+<script lang="ts">
+  import PageHeader from "$lib/PageHeader.svelte";
+  import SocialMedia from "$lib/SocialMedia.svelte";
+  import { IconExternalLink } from "@tabler/icons-svelte";
 </script>
 
 <PageHeader
   title="Hi, I'm Alex"
   subtitle="Web developer since 2018, former intelligence analyst, amateur photographer, nonproliferation policy nerd, and serial hobbyist. I’m always learning and love telling dad jokes."
-  backgroundImgURL="https://github.com/AlexWarnes/Portfolio/blob/master/assets/olympicTrail.jpg?raw=true"
 >
   <div class="social-media-wrapper">
     <SocialMedia />
@@ -39,23 +37,27 @@
     programming, and creative problem-solving. I was hooked.
   </p>
   <p>
-    In early 2019, Booz Allen hired me into a developer role and I said farewell
-    to my career as an analyst. Since then I've had the opportunity to work with
-    and learn from some amazing people while building and maintaining
-    enterprise-scale Angular and React applications (and grew an obsession with
-    composing RxJS streams).
+    In early 2019, I said farewell to my career as an intel analyst. I helped
+    build and maintain enterprise-scale Angular and React applications with Booz
+    Allen Hamilton and Secureworks, working with and learning from some amazing
+    people (and grew an obsession with composing RxJS streams).
   </p>
   <p>
-    These days, when I’m not trying to make my daughter laugh (toddlers are the
-    best audience), I’m looking for new things to learn and build. For examples
-    of my development work and photography, check out my <Link
-      href="/#/development">portfolio</Link
-    > and <Link
+    These days, when I'm not trying to make my daughters laugh (toddlers are the
+    best audience), I'm looking for new things to learn and build. For examples
+    of my development work and photography, check out my <a href="/projects"
+      >portfolio</a
+    >
+    and
+    <a
       href="https://www.instagram.com/alexwarnesphotos/"
-      target="_blank">Instagram<Icon render={Launch16} /></Link
-    >, or connect with me on <Link
+      target="_blank"
+      rel="noopener noreferrer">Instagram<IconExternalLink size={16} /></a
+    >, or connect with me on
+    <a
       href="https://www.linkedin.com/in/alexwarnes/"
-      target="_blank">LinkedIn<Icon render={Launch16} /></Link
+      target="_blank"
+      rel="noopener noreferrer">LinkedIn<IconExternalLink size={16} /></a
     >.
   </p>
 </section>

@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import { Button } from "carbon-components-svelte";
   import SocialMedia from "../SocialMedia.svelte";
   import Code32 from "carbon-icons-svelte/lib/Code32";
@@ -53,4 +53,4 @@ bottom: 5px;"
     margin: 18px 0;
   }
 
-</style>
+</style> -->

@@ -1,45 +1,45 @@
 <script lang="ts">
-  import Router from "svelte-spa-router";
-  import routes from "./routes";
+  // import Router from "svelte-spa-router";
+  // import routes from "./routes";
 
-  import {
-    Header,
-    Button,
-    Icon,
-    HeaderUtilities,
-    HeaderAction,
-    HeaderPanelLinks,
-    HeaderPanelLink,
-  } from "carbon-components-svelte";
-  import Home32 from "carbon-icons-svelte/lib/Home32";
-  import LocationPerson32 from "carbon-icons-svelte/lib/LocationPerson32";
-  import Code32 from "carbon-icons-svelte/lib/Code32";
-  import { onMount } from "svelte";
+  // import {
+  //   Header,
+  //   Button,
+  //   Icon,
+  //   HeaderUtilities,
+  //   HeaderAction,
+  //   HeaderPanelLinks,
+  //   HeaderPanelLink,
+  // } from "carbon-components-svelte";
+  // import Home32 from "carbon-icons-svelte/lib/Home32";
+  // import LocationPerson32 from "carbon-icons-svelte/lib/LocationPerson32";
+  // import Code32 from "carbon-icons-svelte/lib/Code32";
+  // import { onMount } from "svelte";
 
-  let isOpen = false;
-  let vw;
-  let showNavButtons = false;
-  const updateHash = () => {
-    if (window.location.hash === "#/" || window.location.hash === "") {
-      showNavButtons = false;
-    } else {
-      showNavButtons = true;
-    }
-  };
-  const hashChange = () => {
-    updateHash();
-  };
+  // let isOpen = false;
+  // let vw;
+  // let showNavButtons = false;
+  // const updateHash = () => {
+  //   if (window.location.hash === "#/" || window.location.hash === "") {
+  //     showNavButtons = false;
+  //   } else {
+  //     showNavButtons = true;
+  //   }
+  // };
+  // const hashChange = () => {
+  //   updateHash();
+  // };
 
-  onMount(() => {
-    updateHash();
-  });
+  // onMount(() => {
+  //   updateHash();
+  // });
 </script>
 
-<svelte:window bind:innerWidth={vw} on:hashchange={hashChange} />
+<!-- <svelte:window bind:innerWidth={vw} on:hashchange={hashChange} /> -->
 
 <!-- DESKTOP -->
-{#if vw > 875}
-  <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
+<!-- {#if vw > 875} -->
+  <!-- <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
     <div class="flex-spacer" />
     {#if showNavButtons}
       <span class="nav-btn-wrapper">
@@ -49,10 +49,10 @@
         <Button href="/#/about" kind="ghost">ABOUT</Button>
       </span>
     {/if}
-  </Header>
-{:else}
+  </Header> -->
+<!-- {:else} -->
   <!-- MOBILE -->
-  <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
+  <!-- <Header company="Alex Warnes" platformName="Portfolio" href="/#/">
     <div class="flex-spacer" />
     <HeaderUtilities>
       <HeaderAction bind:isOpen>
@@ -74,10 +74,10 @@
         >
       </HeaderAction>
     </HeaderUtilities>
-  </Header>
-{/if}
+  </Header> -->
+<!-- {/if} -->
 <main>
-  <Router {routes} />
+  <!-- <Router {routes} /> -->
 </main>
 
 <style>
