@@ -1,14 +1,16 @@
 <script>
-	import './global.css';
+	import TopNav from '$lib/TopNav.svelte';
+import './global.css';
 </script>
 
 <div class="view-wrapper">
-	<nav>
+	<!-- <nav>
 		<a href="/">HOME</a>
 		<a href="/projects">PROJECTS</a>
 		<a href="/3d">3D</a>
 		<a href="/about">ABOUT</a>
-	</nav>
+	</nav> -->
+  <TopNav />
 	<main>
 		<slot />
 	</main>
