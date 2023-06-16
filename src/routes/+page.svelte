@@ -5,8 +5,6 @@
 </script>
 
 <h1>ALEX WARNES PORTFOLIO</h1>
-<IconHeart />
-<a href="#" class="btn btn-primary">Primary</a>
 
 <SocialMedia />
 <button class="primary">PRIMARY</button>

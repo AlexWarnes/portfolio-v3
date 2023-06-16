@@ -58,7 +58,7 @@ export const projects: Project[] = [
   } as Project,
   {
     id: "7391f7b0-af40-4cc5-ba6d-e069bcb7aecf",
-    name: "Svelte Sequence",
+    name: "svelte-sequence",
     package: true,
     tagline:
       "Custom stores to compose tweened motion sequences over multiple steps.",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
   } as Project,
   {
     id: "f5603185-ebd9-4320-9ffd-936cd9620711",
-    name: "Svelte KBC",
+    name: "svelte-kbc",
     package: true,
     tagline:
       "Configure stores for keyboard inputs and events in any Svelte app.",
@@ -98,7 +98,7 @@ export const projects: Project[] = [
   } as Project,
   {
     id: "64a6c586-9abe-4fea-960b-ae61d1bfcdfd",
-    name: "Svelte Fuse Rx",
+    name: "svelte-fuse-rx",
     package: true,
     tagline:
       "Fusing Svelte and RxJS with simple actions and pipeable stores.",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
       "Combining two of my favorite tools (and learning how to publish an NPM package), svelte-fuse-rx has two primary utilities: an enhanced writable store that can use RxJS operators via pipe, and simple svelte actions for common RxJS use cases like debouncing an input.",
     repoURL: "https://github.com/AlexWarnes/svelte-fuse-rx",
     prodURL: "https://svelte-fuse-rx.netlify.app/",
-    tags: ["Svelte", "SvelteKit", "TypeScript", "RxJS", "Netlify"],
+    tags: ["Svelte", "SvelteKit", "TypeScript", "RxJS", "NPM", "semver", "Netlify"],
     thumbnailURL: "/assets/svelte-fuse-rx.png",
     thumbnailSizes: {
       mobileWidth: 320,
@@ -168,45 +168,41 @@ export const projects: Project[] = [
       desktopHeight: 384,
     },
   } as Project,
-  {
-    id: "ec6a998f-60fe-418e-88eb-00ca08772ad9",
-    name: "TK360",
-    tagline: "Design proposal.",
-    description:
-      "A proposed redesign for a local construction services website using Angular and Material Components. Implements a custom image gallery inside a Material dialog with keyboard shortcuts.",
-    repoURL: "https://github.com/AlexWarnes/tk360",
-    prodURL: "https://tk360-llc.web.app/",
-    tags: ["Angular", "Material", "TypeScript", "Firebase", "RxJS"],
-    thumbnailURL: "/assets/TK360.png",
-    thumbnailSizes: {
-      mobileWidth: 320,
-      mobileHeight: 173,
-      desktopWidth: 475,
-      desktopHeight: 256,
-    },
-  } as Project,
-  {
-    id: "1c14f92b-2266-476e-a6e5-40a3b79e89c7",
-    name: "APOD Explorer",
-    tagline: "Scroll through the universe.",
-    description:
-      "Explore NASA Astronomy Picture of the Day (APOD) archives, discover classic photos, and get inspired by simply scrolling. The official APOD site is difficult to quickly and easily browse through old APODs. This project solves that problem using the NASA Open Data APOD API to generate random APODs from the archives, giving the user a new experience on every visit.",
-    repoURL: "https://github.com/AlexWarnes/APODexplorer",
-    prodURL: "https://alexwarnes.github.io/APODexplorer/",
-    tags: ["HTML", "CSS", "JavaScript", "JQuery"],
-    thumbnailURL: "/assets/APOD.png",
-    thumbnailSizes: {
-      mobileWidth: 320,
-      mobileHeight: 183,
-      desktopWidth: 449,
-      desktopHeight: 256,
-    },
-  } as Project,
+  // {
+  //   id: "ec6a998f-60fe-418e-88eb-00ca08772ad9",
+  //   name: "TK360",
+  //   tagline: "Design proposal.",
+  //   description:
+  //     "A proposed redesign for a local construction services website using Angular and Material Components. Implements a custom image gallery inside a Material dialog with keyboard shortcuts.",
+  //   repoURL: "https://github.com/AlexWarnes/tk360",
+  //   prodURL: "https://tk360-llc.web.app/",
+  //   tags: ["Angular", "Material", "TypeScript", "Firebase", "RxJS"],
+  //   thumbnailURL: "/assets/TK360.png",
+  //   thumbnailSizes: {
+  //     mobileWidth: 320,
+  //     mobileHeight: 173,
+  //     desktopWidth: 475,
+  //     desktopHeight: 256,
+  //   },
+  // } as Project,
+  // {
+  //   id: "1c14f92b-2266-476e-a6e5-40a3b79e89c7",
+  //   name: "APOD Explorer",
+  //   tagline: "Scroll through the universe.",
+  //   description:
+  //     "Explore NASA Astronomy Picture of the Day (APOD) archives, discover classic photos, and get inspired by simply scrolling. The official APOD site is difficult to quickly and easily browse through old APODs. This project solves that problem using the NASA Open Data APOD API to generate random APODs from the archives, giving the user a new experience on every visit.",
+  //   repoURL: "https://github.com/AlexWarnes/APODexplorer",
+  //   prodURL: "https://alexwarnes.github.io/APODexplorer/",
+  //   tags: ["HTML", "CSS", "JavaScript", "JQuery"],
+  //   thumbnailURL: "/assets/APOD.png",
+  //   thumbnailSizes: {
+  //     mobileWidth: 320,
+  //     mobileHeight: 183,
+  //     desktopWidth: 449,
+  //     desktopHeight: 256,
+  //   },
+  // } as Project,
 ];
 
-// Extra uuids
-// [
-//   "e1d6f7fe-71b8-455c-a58c-5845376a5cf5",
-//   "67280d10-3c47-4d22-a44e-c897d059a593",
-//   "205baaed-2de3-4968-bece-e1708ebf7542"
-// ]
+// Grab UUID
+// copy(Crypto.randomUUID())

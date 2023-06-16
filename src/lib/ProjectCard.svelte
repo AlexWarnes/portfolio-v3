@@ -46,17 +46,14 @@
       </p>
     </div>
     <div class="action-row">
-      <a href="{project.prodURL}" class="btn primary">
+      <a href="{project.prodURL}" class="btn primary" target="_blank" rel="noopener noreferrer">
         Live Site
-        <IconExternalLink />
+        <IconExternalLink size={20} />
       </a>
-      <a href="{project.repoURL}" class="btn secondary">
+      <a href="{project.repoURL}" class="btn secondary" target="_blank" rel="noopener noreferrer">
         GitHub Repo
-        <IconBrandGithub />
+        <IconBrandGithub size={20} />
       </a>
-
-      <!-- <Button href={project.prodURL} target="_blank" icon={Launch24}>Live Site</Button> -->
-      <!-- <Button href={project.repoURL} target="_blank" icon={LogoGithub24}>GitHub Repo</Button> -->
     </div>
   </div> 
 
