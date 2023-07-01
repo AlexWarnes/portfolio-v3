@@ -16,7 +16,7 @@
 <section>
   <h2>From Intelligence Analyst to Developer</h2>
   <p>
-    After several years as an intelligence analyst, and feeling a bit like my
+    In 2017, after several years as an intelligence analyst, and feeling a bit like my
     career trajectory was not aligned with my interests and goals, I decided to
     start building a new set of skills to make a change.
   </p>

@@ -35,8 +35,8 @@
   </div>
 </PageHeader>
 
-{#each projects as project (project.id)}
-  <ProjectCard {project} />
+{#each projects as project, idx (project.id)}
+  <ProjectCard {project} style={idx === 0 ? "margin-top: 0;": ""}/>
 {/each}
 
 <style>

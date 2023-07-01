@@ -1,4 +1,4 @@
- <script lang="ts">
+<script lang="ts">
   import { fade } from "svelte/transition";
 
   // PROPS
@@ -9,18 +9,17 @@
 
   // Responsive trigger
   let vw: number;
-  // style="background-image: linear-gradient(to bottom right, #272727c8 33%, #27272700), 
+  // style="background-image: linear-gradient(to bottom right, #272727c8 33%, #27272700),
   // url('{backgroundImgURL}'); {customStyles}"
-
 </script>
 
 <svelte:window bind:innerWidth={vw} />
-<header
-  class="webdev-header content-header"
->
-  <h1 in:fade>{title}</h1>
-  <p class="subtitle">{subtitle}</p>
-  <slot />
+<header>
+  <div class="content">
+    <h1 in:fade>{title}</h1>
+    <p class="subtitle">{subtitle}</p>
+    <slot />
+  </div>
 </header>
 
 <style>
@@ -33,15 +32,21 @@
     /* color: #eaecf2; */
     /* box-shadow: 0 4px 8px #00000028; */
   }
+  header {
+    padding: 100px 1rem;
 
-  .content-header {
-    padding: 40px 40px 60px 10%;
+  }
+
+  .content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
     /* background-color: #272727; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* color: #eaecf2; */
     /* box-shadow: 0 4px 8px #00000028; */
-    min-height: 45vh;
+    /* min-height: 45vh; */
   }
 
   .subtitle {
@@ -57,14 +62,14 @@
   }
 
   @media only screen and (min-width: 860px) {
-    .content-header {
+    /* .content-header {
       padding-top: 100px;
-    }
+    } */
 
     .webdev-header {
       /* background-image: linear-gradient(to right, #272727c8, #27272700), */
-        /* url("/assets/tower-full.jpg"); */
+      /* url("/assets/tower-full.jpg"); */
       /* background-position: bottom; */
     }
   }
-</style> 
+</style>

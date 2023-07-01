@@ -41,9 +41,6 @@
       <a class="btn icon-btn tertiary" title={item.description} href={item.href}>
         <svelte:component this={item.icon} stroke={1.5} />
       </a>
-      <!-- <button class="icon-btn tertiary" title={item.description}>
-        <svelte:component this={item.icon} stroke={1.5} />
-      </button> -->
     </span>
   {/each}
 </div>

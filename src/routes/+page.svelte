@@ -4,28 +4,29 @@
   import { fade } from "svelte/transition";
 
   let vh: number;
+  let vw: number;
 </script>
 
-<svelte:window bind:innerWidth={vh} />
+<svelte:window bind:innerWidth={vw} bind:innerHeight={vh} />
 
-<header style={`padding-top: ${0.2 * vh}px;`}>
+<header style="padding-top: {0.2 * vh}px;">
   <div class="header-content">
     <h1>Alex Warnes</h1>
     <p in:fade>Intelligence Analyst turned Web Developer</p>
     <div class="button-col">
       {#each links as link (link.path)}
         <a href={link.path} class="btn primary">
-          <!-- {#if vw > 800} -->
           <span>{link.name}</span>
-          <!-- {/if} -->
           <svelte:component this={link.icon} size={16} />
         </a>
       {/each}
     </div>
   </div>
   <SocialMedia
-    rowStyles="position: absolute;
-  bottom: 5px;"
+    rowStyles="
+      position: absolute;
+      bottom: 1rem;
+    "
   />
 </header>
 

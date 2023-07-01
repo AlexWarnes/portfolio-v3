@@ -106,6 +106,10 @@ button, .btn {
 	gap: 0.5rem;
 }
 
+a.btn {
+  text-decoration: none;
+}
+
 button.primary, .btn.primary {
 	background-color: var(--primary);
 	color: #fafbfc;

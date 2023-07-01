@@ -7,7 +7,7 @@ export const projects: Project[] = [
     tagline:
       "Monitor connections between NASA/JPL and interplanetary spacecraft missions in real time.",
     description:
-      "Built as an experiment to learn more about the Svelte framework, DSN Live displays actual data from NASA's global network of radio antennas communicating with spacecraft throughout the solar system. The site uses a mix of styles from IBM's Carbon Components and custom CSS. Users can learn more about specific spacecraft connected with each dish, enabled by a custom data structure mapping spacecraft to external URLs.",
+      "Built as an experiment to learn more about Svelte, DSN Live displays actual data from NASA's global network of radio antennas communicating with spacecraft throughout the solar system. The site uses a mix of styles from IBM's Carbon Components and custom CSS. Users can learn more about specific spacecraft connected with each dish, enabled by a custom data structure mapping spacecraft to external URLs.",
     repoURL: "https://github.com/AlexWarnes/dsn-live",
     prodURL: "https://dsn-live.netlify.app/",
     tags: ["Svelte", "TypeScript", "Netlify"],
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     tagline:
       "Create beautiful shader materials in the browser and generate your JavaScript. Powered by lamina.",
     description:
-      "A side project I made to learn more about shaders using lamina. Spatula is a tool for building shader materials without the need to stand up a new project. Inspired by the official lamina debugger, it allows for layer editing and generates the JavaScript for your material. You can use that code as a material in any project that uses lamina and threejs.",
+      "Spatula is a visual editor for building shader materials with lamina. It provides a visual editor and generates the JavaScript for your material. You can use that code as a material in any project that uses lamina and Three.js.",
     repoURL: "https://github.com/AlexWarnes/lamina-spatula",
     prodURL: "https://lamina-spatula.vercel.app/",
     tags: ["SvelteKit", "TypeScript", "Three.js", "Threlte", "RxJS", "Vercel"],
@@ -42,8 +42,8 @@ export const projects: Project[] = [
     id: "d648b64f-7b4e-4984-bbfa-a2151a3c930b",
     name: "Photon",
     tagline:
-      "An open source portfolio of 3D scenes, experiments, and prototypes.",
-    description: "",
+      "[Work in Progress: converting to Threlte v6]",
+    description: "An open source portfolio of 3D scenes, experiments, and prototypes.",
     repoURL: "https://github.com/AlexWarnes/photon",
     prodURL: "https://photon-alexwarnes.vercel.app/",
     tags: ["SvelteKit", "TypeScript", "Three.js", "Threlte", "Vercel"],

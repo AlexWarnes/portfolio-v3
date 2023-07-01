@@ -7,12 +7,13 @@
   import Tag from "$lib/Tag.svelte";
 
   export let project: Project;
+  export let style: string = "";
   let vw: number;
 </script>
 
 <svelte:window bind:innerWidth={vw} />
 
-<article class="card-container panel">
+<article class="card-container panel" {style}>
   <div class="content-wrapper">
     <div class="header">
       <h3>{project.name}
