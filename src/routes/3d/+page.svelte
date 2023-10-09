@@ -1,8 +1,8 @@
 <script lang="ts">
   import PageHeader from "$lib/PageHeader.svelte";
-  import { embeds } from "$lib/data/embeds";
 
-  
+  export let data
+
   const embedQueryParams = "&ctl=1&view=preview"
 </script>
 
@@ -11,7 +11,7 @@
   subtitle="Made with Threlte."
 />
 
-{#each embeds as embed (embed.id)}
+{#each data.examples as embed (embed.id)}
 <div class="embed-wrapper panel">
   <div class="embed-header">
     <h3 id={encodeURI(embed.title.toLowerCase().replace(' ','-'))}>{embed.title}</h3>
