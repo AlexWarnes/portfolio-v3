@@ -1,4 +1,4 @@
-import type { Project } from "./models";
+import type { Project } from "$lib/data/models";
 
 export const projects: Project[] = [
   {
@@ -30,24 +30,6 @@ export const projects: Project[] = [
     prodURL: "https://lamina-spatula.vercel.app/",
     tags: ["SvelteKit", "TypeScript", "Three.js", "Threlte", "RxJS", "Vercel"],
     thumbnailURL: "/assets/spatula.jpg",
-    thumbnailSizes: {
-      // 1200 x 720
-      mobileWidth: 320,
-      mobileHeight: 192,
-      desktopWidth: 400,
-      desktopHeight: 240,
-    },
-  } as Project,
-  {
-    id: "d648b64f-7b4e-4984-bbfa-a2151a3c930b",
-    name: "Photon",
-    tagline:
-      "[Work in Progress: converting to Threlte v6]",
-    description: "An open source portfolio of 3D scenes, experiments, and prototypes.",
-    repoURL: "https://github.com/AlexWarnes/photon",
-    prodURL: "https://photon-alexwarnes.vercel.app/",
-    tags: ["SvelteKit", "TypeScript", "Three.js", "Threlte", "Vercel"],
-    thumbnailURL: "/assets/photon.jpg",
     thumbnailSizes: {
       // 1200 x 720
       mobileWidth: 320,
@@ -133,22 +115,23 @@ export const projects: Project[] = [
       // 662 x 812, 331 x 406
     },
   } as Project,
+
   {
-    id: "1e41fddf-664a-42d6-9f62-0c16b70ff0a3",
-    name: "SC3 Lab",
+    id: "d648b64f-7b4e-4984-bbfa-a2151a3c930b",
+    name: "Photon",
     tagline:
-      "Experiment, learn, and generate code for 3D scenes in the browser with Three.js and svelte-cubed.",
-    description:
-      "A visual editor for building 3D scenes and generating svelte-cubed code. SC3 Lab can help you quickly setup a scene and share the code via Svelte REPL, experiment with different light and material combinations, or test glTF model animations.",
-    repoURL: "https://github.com/AlexWarnes/sc3-lab",
-    prodURL: "https://sc3-lab.netlify.app/",
-    tags: ["Svelte", "TypeScript", "Three.js", "svelte-cubed", "Netlify"],
-    thumbnailURL: "/assets/sc3-lab.png",
+      "[Work in Progress: converting to Threlte v6]",
+    description: "An open source portfolio of 3D scenes, experiments, and prototypes.",
+    repoURL: "https://github.com/AlexWarnes/photon",
+    prodURL: "https://photon-alexwarnes.vercel.app/",
+    tags: ["SvelteKit", "TypeScript", "Three.js", "Threlte", "Vercel"],
+    thumbnailURL: "/assets/photon.jpg",
     thumbnailSizes: {
+      // 1200 x 720
       mobileWidth: 320,
-      mobileHeight: 160,
-      desktopWidth: 510,
-      desktopHeight: 256,
+      mobileHeight: 192,
+      desktopWidth: 400,
+      desktopHeight: 240,
     },
   } as Project,
   {
@@ -166,6 +149,24 @@ export const projects: Project[] = [
       mobileHeight: 360,
       desktopWidth: 213,
       desktopHeight: 384,
+    },
+  } as Project,
+  {
+    id: "1e41fddf-664a-42d6-9f62-0c16b70ff0a3",
+    name: "SC3 Lab",
+    tagline:
+      "[DEPRECATED] - Experiment, learn, and generate code for 3D scenes in the browser with Three.js and svelte-cubed.",
+    description:
+      "A visual editor for building 3D scenes and generating svelte-cubed code. SC3 Lab can help you quickly setup a scene and share the code via Svelte REPL, experiment with different light and material combinations, or test glTF model animations.",
+    repoURL: "https://github.com/AlexWarnes/sc3-lab",
+    prodURL: "https://sc3-lab.netlify.app/",
+    tags: ["Svelte", "TypeScript", "Three.js", "svelte-cubed", "Netlify"],
+    thumbnailURL: "/assets/sc3-lab.png",
+    thumbnailSizes: {
+      mobileWidth: 320,
+      mobileHeight: 160,
+      desktopWidth: 510,
+      desktopHeight: 256,
     },
   } as Project,
   // {

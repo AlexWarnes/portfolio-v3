@@ -8,7 +8,7 @@
 
 <PageHeader
   title="3D Scenes"
-  subtitle="Made with Threlte."
+  subtitle="A small collection of demos, experiments, and prototypes made with Threlte. You can find all the code and tinker with the scenes directly in the embed or by opening them in a new tab."
 />
 
 {#each data.examples as embed (embed.id)}

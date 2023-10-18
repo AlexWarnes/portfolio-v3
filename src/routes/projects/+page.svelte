@@ -2,9 +2,9 @@
   import PageHeader from "$lib/PageHeader.svelte";
   import ProjectCard from "$lib/ProjectCard.svelte";
   import Tag from "$lib/Tag.svelte";
-  import { projects } from "$lib/data/projects";
   import { fade } from "svelte/transition";
 
+  export let data
   const tools = [
     "HTML",
     "CSS",
@@ -35,7 +35,7 @@
   </div>
 </PageHeader>
 
-{#each projects as project, idx (project.id)}
+{#each data.projects as project, idx (project.id)}
   <ProjectCard {project} style={idx === 0 ? "margin-top: 0;": ""}/>
 {/each}
 
