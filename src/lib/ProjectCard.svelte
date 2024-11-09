@@ -1,11 +1,11 @@
 <script lang="ts">
   // button,tag, launch, github
   import type { Project } from "$lib/data/models";
-  import { IconExternalLink } from '@tabler/icons-svelte';
-  import { IconBrandGithub } from "@tabler/icons-svelte";
-  import { IconBrandNpm } from "@tabler/icons-svelte";
+  import { ExternalLink, Github, Package } from 'lucide-svelte'
+  // import { IconExternalLink } from '@tabler/icons-svelte';
+  // import { IconBrandGithub } from "@tabler/icons-svelte";
+  // import { IconBrandNpm } from "@tabler/icons-svelte";
   import Tag from "$lib/Tag.svelte";
-
   export let project: Project;
   export let style: string = "";
   let vw: number;
@@ -19,7 +19,7 @@
       <h3>{project.name}
         {#if project.package}
           <span class="npm-wrapper">
-            <IconBrandNpm />
+            <Package strokeWidth={1.25} />
           </span>
         {/if}
       </h3>
@@ -49,11 +49,11 @@
     <div class="action-row">
       <a href="{project.prodURL}" class="btn primary" target="_blank" rel="noopener noreferrer">
         Live Site
-        <IconExternalLink size={20} />
+        <Package size={20} strokeWidth={1.25} />
       </a>
       <a href="{project.repoURL}" class="btn secondary" target="_blank" rel="noopener noreferrer">
         GitHub Repo
-        <IconBrandGithub size={20} />
+        <Github size={20} strokeWidth={1.25} />
       </a>
     </div>
   </div> 

@@ -1,7 +1,9 @@
 <script lang="ts">
   import PageHeader from "$lib/PageHeader.svelte";
   import SocialMedia from "$lib/SocialMedia.svelte";
-  import { IconExternalLink } from "@tabler/icons-svelte";
+  // import { IconExternalLink } from "@tabler/icons-svelte";
+  import { ExternalLink, } from 'lucide-svelte'
+
 </script>
 
 <PageHeader
@@ -52,12 +54,12 @@
     <a
       href="https://www.instagram.com/alexwarnesphotos/"
       target="_blank"
-      rel="noopener noreferrer">Instagram<IconExternalLink size={16} /></a
+      rel="noopener noreferrer">Instagram<ExternalLink strokeWidth={1.25} size={16} /></a
     >, or connect with me on
     <a
       href="https://www.linkedin.com/in/alexwarnes/"
       target="_blank"
-      rel="noopener noreferrer">LinkedIn<IconExternalLink size={16} /></a
+      rel="noopener noreferrer">LinkedIn<ExternalLink strstrokeWidth={1.25} size={16} /></a
     >.
   </p>
 </section>

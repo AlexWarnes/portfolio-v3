@@ -16,8 +16,8 @@
     <div class="button-col">
       {#each links as link (link.path)}
         <a href={link.path} class="btn primary">
+          <svelte:component this={link.icon} size={16} strokeWidth={1.75} />
           <span>{link.name}</span>
-          <svelte:component this={link.icon} size={16} />
         </a>
       {/each}
     </div>
