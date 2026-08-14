@@ -28,7 +28,7 @@
   <div class="code-box">
     <p class="tools-title">Current Toolkit</p>
     {#each tools as tool, idx}
-      <span in:fade={{ duration: 1000, delay: 400 + idx * 100 }}>
+      <span in:fade|global={{ duration: 1000, delay: 400 + idx * 100 }}>
         <Tag>{tool}</Tag>
       </span>
     {/each}

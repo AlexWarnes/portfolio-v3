@@ -16,7 +16,7 @@
 <svelte:window bind:innerWidth={vw} />
 <header>
   <div class="content">
-    <h1 in:fade>{title}</h1>
+    <h1 in:fade|global>{title}</h1>
     <p class="subtitle">{subtitle}</p>
     <slot />
   </div>

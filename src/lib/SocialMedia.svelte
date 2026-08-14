@@ -44,7 +44,7 @@
 
 <div class="social-row" style={rowStyles}>
   {#each contactItems as item, idx}
-    <span in:fade={{ duration: 1000, delay: 200 + idx * 100 }}>
+    <span in:fade|global={{ duration: 1000, delay: 200 + idx * 100 }}>
       <a class="btn icon-btn tertiary" title={item.description} href={item.href}>
         <svelte:component this={item.icon} strokeWidth={1.25} />
       </a>
