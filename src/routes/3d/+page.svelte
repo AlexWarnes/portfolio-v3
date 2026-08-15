@@ -1,7 +1,7 @@
 <script lang="ts">
   import PageHeader from "$lib/PageHeader.svelte";
 
-  export let data
+  let { data } = $props();
 
   const embedQueryParams = "&ctl=1&view=preview"
 </script>
@@ -17,7 +17,7 @@
     <h3 id={encodeURI(embed.title.toLowerCase().replace(' ','-'))}>{embed.title}</h3>
     <p class="description">{embed.description}</p>
   </div>
-  <iframe title={embed.title} src={embed.url + embedQueryParams} />
+  <iframe title={embed.title} src={embed.url + embedQueryParams}></iframe>
 </div>
 {/each}
 <style>

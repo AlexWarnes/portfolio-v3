@@ -4,7 +4,7 @@
   import Tag from "$lib/Tag.svelte";
   import { fade } from "svelte/transition";
 
-  export let data
+  let { data } = $props();
   const tools = [
     "HTML",
     "CSS",

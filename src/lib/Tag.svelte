@@ -1,9 +1,14 @@
 <script lang="ts">
-  export let bg: string = "var(--bg-2)"
-  export let color: string = "var(--color-2)"
+  interface Props {
+    bg?: string;
+    color?: string;
+    children?: import('svelte').Snippet;
+  }
+
+  let { bg = "var(--bg-2)", color = "var(--color-2)", children }: Props = $props();
 </script>
 <span class="tag" style="background-color: {bg}; color: {color};">
-  <slot />
+  {@render children?.()}
 </span>
 
 <style>
