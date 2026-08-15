@@ -4,7 +4,7 @@
   import Tag from "$lib/Tag.svelte";
   import { fade } from "svelte/transition";
 
-  export let data
+  let { data } = $props();
   const tools = [
     "HTML",
     "CSS",
@@ -28,7 +28,7 @@
   <div class="code-box">
     <p class="tools-title">Current Toolkit</p>
     {#each tools as tool, idx}
-      <span in:fade={{ duration: 1000, delay: 400 + idx * 100 }}>
+      <span in:fade|global={{ duration: 1000, delay: 400 + idx * 100 }}>
         <Tag>{tool}</Tag>
       </span>
     {/each}
